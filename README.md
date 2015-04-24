@@ -1,11 +1,11 @@
-### Reading the files
+## Reading the files
 
 The txt files from samsung were read using read.table(). They were 3 files from a training-set of persons participating to the experiment and 3 files from a test-set of persons. 
 1) 'subject_train.txt' and 'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 2) 'y_train.txt' and 'y_test.txt': each row identifies the activity performed by the subject
 3) X_train.txt' and 'X_test.txt': with 561 columns corresponding to the features measured on each suject and each experiment
 
-### Merge of the 3 files from the training set in order to have a unique table named train_table_fin
+## Merge of the 3 files from the training set in order to have a unique table named train_table_fin
 - used of the ply and dplyr packages
 - in each file was added a column named "id" in order to merge them 
 - a column with "training" in each row was added to subject_train, to identify the origin of the persons 
@@ -13,7 +13,7 @@ The txt files from samsung were read using read.table(). They were 3 files from 
 - the column named V1 in y_train was renamed as "activity"
 The 3 tables were merged together as "train_table_fin"
 
-### Merge of the 3 files from the test set in order to have a unique table named test_table_fin
+## Merge of the 3 files from the test set in order to have a unique table named test_table_fin
 - in each file was added a column named "id" in order to merge them 
 - a column with "test" in each row was added to subject_test, to identify the origin of the persons 
 - the column named V1 in subject_test was renamed as "idsubject"
